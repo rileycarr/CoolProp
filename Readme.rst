@@ -1,3 +1,10 @@
+This repository contains releases of the necessary files to use CoolProp in Java (for Windows only, currently). This will allow convenient thermodynamic property lookup in Java. CoolProp can also act as an interface to REFPROP, which allows direct calls to the REFPROP routines from Java.
+
+The necessary files are the coolprop.jar and CoolProp.dll. These can be found under releases for different versions. The CoolProp classes in the jar file are all part of the org.coolprop package (i.e. use ``import org.coolprop.*`` in your program). The dll should be should be available to the java program at runtime. Otherwise the ``System.loadLibrary("CoolProp");`` call will fail. This means the dll can either be located in the working directory from where the program is run or on the systems ``PATH`` variable.
+
+Calling REFPROP should work seamlessly as well, as long as the local REFPROP installation is located at "C:\\Program Files\\REFPROP".
+
+===================
 
 Welcome to CoolProp 
 ===================
